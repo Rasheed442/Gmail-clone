@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {AiOutlineMenu,AiOutlineStar,AiOutlineClockCircle,AiOutlineSend,AiOutlineDown,
+import {AiOutlineMenu,AiOutlineStar, AiOutlineClose,AiOutlineClockCircle,AiOutlineSend,AiOutlineDown,
   AiOutlineSetting, AiOutlineUp, AiOutlinePlus} from 'react-icons/ai'
 import {BsFillPencilFill, BsInboxFill,BsChatLeftDotsFill} from 'react-icons/bs'
 import {RiDraftLine, RiSpam2Fill} from 'react-icons/ri'
@@ -12,10 +12,10 @@ function sidebar() {
   return (
     <div className={style.container}>
 
-        <div className={style.head}>
-            <AiOutlineMenu style={{fontSize:'25px'}} onClick={() =>{
+        <div className={style.head}onClick={() =>{
              setOpen(!open)
-            }}/>
+            }}>
+            {open ?<AiOutlineMenu style={{fontSize:'25px', color:"white"}} />: <AiOutlineClose style={{fontSize:'25px', color:"white"}}/>}
             <h1>RANSOM</h1>
         </div>
 

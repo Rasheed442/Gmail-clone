@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 10px;
+    gap: 12rem;
+    color: gainsboro;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
